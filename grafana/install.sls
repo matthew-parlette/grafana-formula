@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "grafana/map.jinja" import grafana with context %}
 
-template-pkg:
-  pkg.installed:
-    - name: {{ template.pkg }}
+grafana-image:
+  dockerng.image_present:
+    - name: {{ grafana.image }}
+    - force: True
