@@ -1,14 +1,13 @@
-================
-template-formula
-================
+===============
+grafana-formula
+===============
 
-A saltstack formula that is empty. It has dummy content to help with a quick
-start on a new formula.
+This state will add the official granafa docker container to a minion.
 
 .. note::
 
-    See the full `Salt Formulas installation and usage instructions
-    <http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
+    See the `Grafana website
+    <http://grafana.org/>`_.
 
 Available states
 ================
@@ -16,7 +15,7 @@ Available states
 .. contents::
     :local:
 
-``template``
-------------
+``grafana``
+-----------
 
-Installs the template package, and starts the associated template service.
+Installs the grafana docker image, and starts the associated grafana container.

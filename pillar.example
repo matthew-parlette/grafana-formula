@@ -1,3 +1,5 @@
-template:
-  lookup:
-    master: template-master
+grafana:
+  port: 3000
+  environment:
+    GF_SERVER_ROOT_URL: http://your.grafana.url
+    GF_SECURITY_ADMIN_PASSWORD: admin-password
